@@ -17,6 +17,7 @@ public class Keywords {
         }
 
         Configuration conf = new Configuration();
+        conf.set("mapred.textoutputformat.separator", ",");
         Job job = Job.getInstance(conf, "KeyWordsCount");
         job.setJarByClass(Keywords.class);
 

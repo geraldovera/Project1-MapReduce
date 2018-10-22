@@ -18,6 +18,7 @@ public class Occurrences {
         }
 
         Configuration conf = new Configuration();
+        conf.set("mapred.textoutputformat.separator", ",");
         Job job = Job.getInstance(conf, "Occurrences");
         job.setJarByClass(Occurrences.class);
 

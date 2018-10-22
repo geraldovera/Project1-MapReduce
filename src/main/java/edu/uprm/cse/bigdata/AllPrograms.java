@@ -32,6 +32,7 @@ public class AllPrograms {
 
         //Occurrences
         Configuration conf1 = new Configuration();
+        conf1.set("mapred.textoutputformat.separator", ",");
         Job job1 = Job.getInstance(conf1, "Occurrences");
         job1.setJarByClass(Occurrences.class);
 
@@ -48,6 +49,7 @@ public class AllPrograms {
 
         //Keywords
         Configuration conf2 = new Configuration();
+        conf2.set("mapred.textoutputformat.separator", ",");
         Job job2 = Job.getInstance(conf2, "Keywords");
         job2.setJarByClass(Keywords.class);
 
@@ -64,6 +66,7 @@ public class AllPrograms {
 
         //ScreenNames
         Configuration conf3 = new Configuration();
+        conf3.set("mapred.textoutputformat.separator", ",");
         Job job3 = Job.getInstance(conf3, "ScreenNames");
         job3.setJarByClass(ScreenNames.class);
 
@@ -80,6 +83,7 @@ public class AllPrograms {
 
         //Replies
         Configuration conf5 = new Configuration();
+        conf5.set("mapred.textoutputformat.separator", ",");
         Job job5 = Job.getInstance(conf5, "Replies");
         job5.setJarByClass(Replies.class);
 
@@ -96,6 +100,7 @@ public class AllPrograms {
 
         //Messages
         Configuration conf6 = new Configuration();
+        conf6.set("mapred.textoutputformat.separator", ",");
         Job job6 = Job.getInstance(conf6, "Messages");
         job6.setJarByClass(Messages.class);
 
